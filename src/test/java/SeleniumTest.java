@@ -22,4 +22,12 @@ public class SeleniumTest {
         driver.quit();
     }
 
+    @Test
+    public void getReactShoppingCart() {
+        WebDriverManager.firefoxdriver().setup();
+        WebDriver driver = new FirefoxDriver();
+        driver.get("https://react-shopping-cart-67954.firebaseapp.com/");
+        driver.quit();
+    }
+
 }
