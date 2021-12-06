@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class LocatingElementsTest {
 
     @Test
-    public void firstElementsQuiz() {
+    public void firstElementsQuizTest() {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.saucedemo.com/");
