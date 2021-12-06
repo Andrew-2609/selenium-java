@@ -1,5 +1,6 @@
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Assert;
+import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -10,9 +11,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LocatingElementsTest {
 
+    @BeforeClass
+    public static void setupClass() {
+        WebDriverManager.chromedriver().setup();
+    }
+
     @Test
     public void firstElementsQuizTest() {
-        WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.saucedemo.com/");
 
@@ -27,7 +32,6 @@ public class LocatingElementsTest {
 
     @Test
     public void typesOfLocatorsTest() {
-        WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.saucedemo.com/");
 
