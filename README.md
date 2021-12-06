@@ -29,4 +29,4 @@ here: [Selenium WebDriver with Java Quickstart](https://www.udemy.com/course/sel
 
 However, I must say that this repository uses **different versions** of the dependencies used in the course (which you
 can find in `pom.xml`). So, if you don't want to spend an extra time searching solutions on Google, I recommend you
-using the same versions of dependencies show in the course. You just need to keep in mind that they are outdated.
+using the same versions of dependencies shown in the course. You just need to keep in mind that they are outdated.
